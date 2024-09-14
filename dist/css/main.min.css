@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/** Подключение переменных */
+:root {
+  --bs-font-family: "Lato", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-font-color: #ffff;
+  --bs-transition: 0.3s ease-in-out;
+  --main-color: #1F98F0;
+}
+
+/**
+* Подключение sass function и mixins и extends стилей
+*/
+/** Обнуление */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:focus, *:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  opacity: 0;
+  scroll-behavior: smooth;
+  transition: opacity 0.8s ease-in-out;
+}
+html.loaded {
+  opacity: 1;
+}
+html.lock {
+  touch-action: none;
+  overflow: hidden;
+}
+html.lock [data-lp] {
+  padding-inline-end: var(--bh-scrollbar-width, rem(16));
+}
+html.lock .wrapper {
+  margin-inline-end: var(--bh-scrollbar-width, rem(16));
+}
+
+html,
+body {
+  inline-size: 100%;
+  block-size: 100%;
+  min-inline-size: 320px;
+}
+
+body {
+  overscroll-behavior: none;
+  line-height: var(--bs-line-height);
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  font-family: var(--bs-font-family);
+  font-size: var(--bs-font-size);
+  font-weight: var(--bs-font-weight);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  user-select: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+sup {
+  color: inherit;
+}
+
+/**
+* Библиотеки
+* раскомментировать для использования
+*/
+/**
+* Подключение custom scrollbar для всего сайта
+*/
+*::-webkit-scrollbar {
+  inline-size: rem(8);
+  background-color: var(--white-color);
+}
+*::-webkit-scrollbar-track {
+  border-radius: rem(4);
+  box-shadow: inset 0 0 rem(6) rgba(0, 0, 0, 0.2);
+  background: #eee;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: rem(4);
+  border: 0 none #fff;
+  background-color: var(--primary-color);
+}
+@media (any-hover: hover) {
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-hover-color);
+  }
+}
+
+/**
+* Общие параметры, шаблоны(заготовки) и вспомогательные классы
+*/
+/**
+
+* Подключение стилей отдельных блоков и секций
+*/
+.header {
+  z-index: 50;
+  inline-size: 100%;
+  transition: background-color var(--bs-transition);
+}
+.header-is-sticky .header {
+  position: fixed;
+  background-color: #007aff;
+}
+.header__container {
+  display: flex;
+  block-size: rem(100);
+  align-items: center;
+}
+.header-is-sticky .header__container {
+  block-size: rem(50);
+}
+
+/*
+.icon-menu {
+  display: none;
+
+  @include media-mx(768) {
+    display: block;
+    position: relative;
+    width: rem(30);
+    height: rem(18);
+    cursor: pointer;
+    z-index: 5;
+
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 300ms ease 0ms;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background-color: #000;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: calc(50% - rem(1));
+    }
+
+    .menu-open & {
+      span {
+        width: 0;
+      }
+
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+*/
+.container {
+  max-width: 1137px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-screen {
+  background: #1f98f0;
+  padding: 80px 20px 80px;
+}
+.first-screen__title {
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-size: 51px;
+  font-weight: 700;
+  line-height: 66px;
+  margin-bottom: 30px;
+}
+.first-screen__descr {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.first-screen__wrapper__content {
+  max-width: 488px;
+  width: 100%;
+}
+.first-screen__wrapper__btn {
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.first-screen__wrapper__btn > button {
+  width: 190px;
+  height: 55px;
+}
+.first-screen__wrapper__btn > button > img {
+  width: 190px;
+  height: 55px;
+}
+.first-screen__wrapper__img {
+  position: relative;
+  margin: 0 73px 0 20px;
+}
+.first-screen__ellipse_left {
+  position: absolute;
+  bottom: -50px;
+  left: -90px;
+}
+.first-screen__ellipse_right {
+  position: absolute;
+  right: -90px;
+}
+
+.checkboxes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-wrap: nowrap;
+}
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+  /* Disabled */
+  /* Focused */
+  /* Checked */
+}
+.checkbox__input:disabled + .checkbox__box {
+  opacity: 0.7;
+}
+.checkbox__input:focus + .checkbox__box {
+  box-shadow: 0 0 0 2px #00f;
+}
+.checkbox__input:checked + .checkbox__box {
+  border-color: #fff;
+  background-color: #ff4040;
+}
+.checkbox__input:checked:focus + .checkbox__box {
+  outline: 1px solid #000;
+}
+.checkbox__input:checked:disabled + .checkbox__box {
+  opacity: 0.7;
+}
+.checkbox__box {
+  border: 2px solid #1a8c80;
+  border-radius: 3px;
+  block-size: 20px;
+  flex: 0 0 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: rem(10);
+  flex-direction: column;
+}
+.tabs__nav {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+}
+.tabs__trigger {
+  padding: rem(10);
+  transition: 0.2s ease-in-out;
+}
+.tabs__trigger.active {
+  color: #fff;
+  background-color: #ff4040;
+}
+.tabs__panel {
+  display: none;
+  animation: fade-up-big 0.4s forwards;
+}
+.tabs__panel.active {
+  display: block;
+}
+
+.accordion {
+  /** Установить свои значения */
+}
+.accordion__item {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  /** Установить свои значения */
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.accordion__item:not(:first-of-type) {
+  border-block-start: 0;
+}
+.accordion__item:first-of-type {
+  border-start-start-radius: rem(4);
+  border-start-end-radius: rem(4);
+}
+.accordion__item:last-of-type {
+  border-end-end-radius: rem(4);
+  border-end-start-radius: rem(4);
+}
+.accordion__item.open .accordion__header {
+  color: #ff4040;
+  /** Установить свои значения */
+  background-color: #e7f1ff;
+}
+.accordion__item.open .accordion__header::after {
+  transform: rotate(0deg);
+}
+.accordion__item.open .accordion__content {
+  block-size: max-content;
+  /** Установить свои значения */
+  padding: rem(36) rem(8);
+}
+.accordion__header {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  /** Установить свои значения */
+  padding: rem(8);
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease-in-out;
+}
+.accordion__header:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.accordion__header:active {
+  background: rgba(255, 255, 255, 0.05);
+}
+.accordion__header::after {
+  content: "";
+  position: static;
+  block-size: rem(24);
+  inline-size: rem(24);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  transition: transform 0.6s ease-in-out;
+}
+.accordion__content {
+  block-size: 0;
+  /** Установить свои значения */
+  padding: 0 rem(8);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer {
+  padding-block: rem(20);
+  background: var(--black-color);
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: em(510)) {
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/*# sourceMappingURL=main.min.css.map */
