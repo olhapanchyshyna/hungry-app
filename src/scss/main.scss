@@ -1,47 +1,43 @@
-@use "sass:math";
+@use 'sass:math';
 
 /**
 * Подключение шрифтов локально из папки "./src/fonts"
 */
-@import "config/fonts";
+@import 'config/fonts';
 
 /** Подключение переменных */
-@import "config/root";
-@import "config/vars";
+@import 'config/root';
+@import 'config/vars';
 
 /**
 * Подключение sass function и mixins и extends стилей
 */
 
-@import "config/mixins";
+@import 'config/mixins';
 
 /** Обнуление */
-@import "config/reset";
-
-/**
-* Библиотеки
-* раскомментировать для использования
-*/
-// @import 'libs/aos';
-// @import 'libs/swiper';
+@import 'config/reset';
 
 /**
 * Подключение custom scrollbar для всего сайта
 */
-@import "config/scrollbar";
+@import 'config/scrollbar';
 
 /**
 * Общие параметры, шаблоны(заготовки) и вспомогательные классы
 */
-@import "config/base";
+@import 'config/base';
 
 /**
 
 * Подключение стилей отдельных блоков и секций
 */
-@import "components/header";
-@import "components/first-screen";
-@import "components/checkbox";
-@import "components/tabs";
-@import "components/accordion";
-@import "components/footer";
+@import 'components/header';
+@import 'components/first-screen';
+@import 'components/company-use';
+@import 'components/main-features';
+@import 'components/testimonials';
+@import 'components/food-available';
+@import 'components/update-news';
+@import 'components/footer';
+@import 'components/media';

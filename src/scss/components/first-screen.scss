@@ -1,16 +1,16 @@
-.container {
-	max-width: 1137px;
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .first-screen {
 	background: #1f98f0;
-	padding: 80px 20px 80px;
+	padding: 60px 20px 80px;
 
+	.mobile{
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__title {
 		color: #ffffff;
 		font-family: 'Work Sans';
@@ -48,7 +48,7 @@
 		}
 		&__img {
 			position: relative;
-			margin: 0 73px 0 20px 
+			margin: 0 73px 0 20px;
 		}
 	}
 

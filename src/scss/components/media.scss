@@ -1,0 +1,309 @@
+@media screen and (max-width: 1200px) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.main-title {
+		font-size: 33px;
+	}
+
+	/* first screen */
+	.first-screen {
+		&__title {
+			font-size: 45px;
+			line-height: 50px;
+			margin-bottom: 20px;
+		}
+		&__descr {
+			font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 20px;
+		}
+		&__wrapper {
+			&__btn {
+				max-width: 350px;
+				width: 100%;
+				> button {
+					width: 170px;
+					> img {
+						width: 170px;
+					}
+				}
+			}
+		}
+		&__phone {
+			width: 300px;
+		}
+		&__ellipse_left {
+			bottom: -35px;
+			left: -55px;
+			width: 120px;
+		}
+		&__ellipse_right {
+			right: -50px;
+			width: 110px;
+		}
+	}
+
+	/* .company-use */
+	.company-use {
+		&__wrapper-logo {
+			> img {
+				max-width: 160px;
+				width: 100%;
+			}
+		}
+	}
+
+	/* .main-features */
+	.main-features {
+		.container {
+			justify-content: space-around;
+		}
+		&__phone {
+			max-width: 280px;
+		}
+		&__circle_bottom {
+			bottom: -50px;
+			width: 150px;
+		}
+		&__circle_left {
+			top: 30px;
+			left: -40px;
+			width: 120px;
+		}
+		&__wrapper__content {
+			max-width: 500px;
+		}
+		&__items {
+			> img {
+				width: 75px;
+			}
+			&__content-wrapper {
+				margin-left: 20px;
+			}
+			&__title {
+				margin-bottom: 14px;
+			}
+		}
+	}
+
+	/* food-available */
+	.food-available {
+		padding: 80px 20px 80px;
+	}
+
+	/* update-news */
+	.update-news {
+		padding: 70px 0 70px;
+		&__list {
+			justify-content: space-evenly;
+		}
+		&__item {
+			margin-bottom: 25px;
+
+			&__title {
+				margin-bottom: 15px;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.main-btn {
+		padding: 10px 15px 10px 15px;
+		font-size: 16px;
+		height: 50px;
+	}
+	.main-title {
+		font-size: 28px;
+	}
+	.logo {
+		font-size: 22px;
+	}
+	/* header */
+	.header {
+		padding: 20px 0;
+		&__logo {
+			margin-right: 15px;
+		}
+		.menu__list {
+			width: 270px;
+		}
+	}
+
+	/* first-screen */
+	.first-screen {
+		padding: 30px 20px 50px;
+		.container {
+			justify-content: center;
+		}
+		.mobile {
+			display: flex;
+			max-width: 300px;
+			margin: auto;
+			margin-bottom: 50px;
+		}
+		.deckstop {
+			display: none;
+		}
+		&__title {
+			font-size: 38px;
+			line-height: 40px;
+		}
+
+		&__wrapper {
+			&__content {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+			&__btn {
+				max-width: 300px;
+				width: 100%;
+				> button {
+					width: 140px;
+					> img {
+						width: 140px;
+						height: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	/* .company-use */
+	.company-use {
+		padding: 40px 0 20px;
+		&__title {
+			font-size: 18px;
+		}
+		&__wrapper-logo {
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin-top: 30px;
+			> img {
+				padding: 10px 10px;
+			}
+		}
+	}
+
+	/* .main-features */
+	.main-features {
+		padding: 40px 0 50px;
+		&__phone {
+			max-width: 220px;
+		}
+		&__circle_bottom {
+			bottom: -35px;
+			width: 130px;
+		}
+		&__circle_left {
+			top: 12px;
+			left: -25px;
+			width: 100px;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__wrapper__content {
+			max-width: 330px;
+		}
+		&__items {
+			margin-bottom: 28px;
+			> img {
+				width: 55px;
+			}
+			&__content-wrapper {
+				margin-left: 12px;
+			}
+			&__title {
+				font-size: 18px;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
+			&__descr {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	/* testimonials  */
+	.testimonials {
+		padding: 20px 0 35px;
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__list {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		&__item {
+			max-width: 300px;
+			padding: 10px;
+		}
+	}
+
+	/* food-available */
+	.food-available {
+		padding: 60px 0px 60px;
+	}
+
+	/* update-news */
+	.update-news {
+		padding: 50px 0 50px;
+		&__title {
+			margin: 0 auto 30px;
+		}
+
+		&__item {
+			&__title {
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+			&__descr {
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+			&__img {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	/* footer */
+
+	.footer {
+		padding: 30px 0;
+		.container {
+			flex-direction: column;
+		}
+		&__wrapper__logo {
+			margin-bottom: 40px;
+		}
+		&__logo {
+			text-align: center;
+		}
+		&__descr {
+			font-size: 14px;
+			line-height: 20px;
+			margin-top: 10px;
+		}
+		.menu {
+			&__item {
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
+			&__title {
+				font-size: 18px;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

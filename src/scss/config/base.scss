@@ -1,0 +1,27 @@
+.container {
+	max-width: 1137px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-title {
+	font-size: 38px;
+	line-height: 46px;
+	font-weight: 700;
+	color: var(--black-color);
+}
+
+.main-btn {
+	padding: 15px 30px 15px 30px;
+	border-radius: 10px;
+	font-size: 18px;
+	background: #fff;
+	height: 64px;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 37px;
+	color: #ffff;
+}

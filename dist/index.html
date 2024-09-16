@@ -23,23 +23,39 @@
 <body>
   <div class="wrapper">
     <header class="header" data-lp>
-	<div class="header__container">
-		<a href="#" class="header__logo logo"></a>
-		<nav class="header__menu menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a href="#" class="menu__link">Link</a></li>
-			</ul>
-		</nav>
-		
+	<div class="container">
+		<div class="menu__wrapper">
+			<a href="#" class="logo header__logo">
+				Hungry
+			</a>
+			<nav class="header__menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Features</a>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">Testimonial</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- <button class='main-btn header__btn'>Download Now</button> -->
+
 	</div>
 </header>
-
 
     <main class="page">
       <section class="first-screen">
 	<div class="container">
 		<div class="first-screen__wrapper__content">
 			<h1 class="first-screen__title">Your Favourite Food delivery Partner.</h1>
+
+			<div class="first-screen__wrapper__img mobile">
+				<img src="../images/first-screen/ellipse-left.png" alt="" class="first-screen__ellipse_left">
+				<img src="../images/first-screen/phones.png" alt="" class="first-screen__phone">
+				<img src="../images/first-screen/ellipse-right.png" alt="" class="first-screen__ellipse_right">
+			</div>
+
 			<div class="first-screen__descr">Food Delivery is a thriving business and there are many opportunities for this
 				Businesses as its Growing.</div>
 
@@ -53,72 +69,197 @@
 			</div>
 		</div>
 
-		<div class="first-screen__wrapper__img">
+		<div class="first-screen__wrapper__img deckstop">
 			<img src="../images/first-screen/ellipse-left.png" alt="" class="first-screen__ellipse_left">
-			<img src="../images/first-screen/phones.png" alt="">
+			<img src="../images/first-screen/phones.png" alt="" class="first-screen__phone">
 			<img src="../images/first-screen/ellipse-right.png" alt="" class="first-screen__ellipse_right">
 		</div>
 	</div>
 </section>
-      
-      <!-- <div data-observ></div>
+      <section class="company-use">
+	<div class="container">
+		<div class="company-use__title">100+ Companies Use our App</div>
+		<div class="company-use__wrapper-logo">
+			<img src="../images/company-use/logo-1.png" alt="logo-company">
+			<img src="../images/company-use/logo-2.png" alt="logo-company">
+			<img src="../images/company-use/logo-3.png" alt="logo-company">
+			<img src="../images/company-use/logo-4.png" alt="logo-company">
+		</div>
+	</div>
 
-        <div class="page__container">
-        
-          <div class="accordion">
-  <div class="accordion__item">
-    <div class="accordion__header">Элемент 1</div>
-    <div class="accordion__content">
-      <p>Контент 1</p>
-    </div>
-  </div>
+</section>
+      <section class="main-features">
+	<div class="container">
 
-  <div class="accordion__item">
-    <div class="accordion__header">Элемент 2</div>
-    <div class="accordion__content">
-      <p>Контент 2</p>
-    </div>
-  </div>
+		<div class="main-features__wrapper__img">
+			<img src="../images/main-features/circle-left.png" alt="circle-left" class="main-features__circle_left">
+			<img src="../images/main-features/main-features-phone.png" alt="/main-feature-phone" class="main-features__phone">
+			<img src="../images/main-features/circle-bottom.png" alt="circle-bottom" class="main-features__circle_bottom">
+		</div>
 
-  <div class="accordion__item">
-    <div class="accordion__header">Элемент 3</div>
-    <div class="accordion__content">
-      <p>Контент 3</p>
-    </div>
-  </div>
-</div>
+		<div class="main-features__wrapper__content">
+			<h2 class="main-title main-features__title">Main Features</h2>
+			<div>
+				<div class="main-features__items">
+					<img src="../images/main-features/quick-delivery.png" alt="quick-delivery">
+					<div class="main-features__items__content-wrapper">
+						<div class="main-features__items__title">Quick Delivery</div>
+						<div class="main-features__items__descr">Food Delivery is a thriving business and there are many
+							opportunities for this Businesses as its Growing.</div>
+					</div>
+				</div>
+				<div class="main-features__items">
+					<img src="../images/main-features/fast-payment.png" alt="quick-delivery">
+					<div class="main-features__items__content-wrapper">
+						<div class="main-features__items__title">Fast Payment</div>
+						<div class="main-features__items__descr">Food Delivery is a thriving business and there are many
+							opportunities for this Businesses as its Growing.</div>
+					</div>
+				</div>
+				<div class="main-features__items">
+					<img src="../images/main-features/get-reviews.png" alt="quick-delivery">
+					<div class="main-features__items__content-wrapper">
+						<div class="main-features__items__title">Get Reviews</div>
+						<div class="main-features__items__descr">Food Delivery is a thriving business and there are many
+							opportunities for this Businesses as its Growing.</div>
+					</div>
+				</div>
 
-          <br>
-          <br>
-          <br>
-          <div class="tabs" data-tabs="tabs-example">
-    <div class="tabs__nav">
-        <button class="tabs__trigger" type="button">Таб 1</button>
-        <button class="tabs__trigger" type="button">Таб 2</button>
-        <button class="tabs__trigger" type="button">Таб 3</button>
-    </div>
+			</div>
 
-    <div class="tabs__content">
-        <div class="tabs__panel">Панель 1</div>
-        <div class="tabs__panel">Панель 2</div>
-        <div class="tabs__panel">Панель 3</div>
-    </div>
-</div>
+		</div>
 
-          <br>
-          <br>
-          <br>
 
-          <button data-type="popup-1" type="button">Открыть попап</button>
-          <br>
-          
-        </div> -->
+	</div>
+</section>
+      <section class="testimonials">
+	<div class="container">
+		<h2 class="main-title testimonials__title">Testimonials</h2>
+		<div class="testimonials__list">
+			<div class="testimonials__item">
+				<img src="../images/testimonials/testimonials-1.png" alt="testimonials-1" class="testimonials__item__img">
+				<div class="testimonials__item__title">Jhon Smith</div>
+				<div class="testimonials__item__descr">“ Food Delivery is a thriving business and there are many opportunities for this Businesses as its Growing. Food Delivery is a thriving business ”</div>
+			</div>
+			<div class="testimonials__item">
+				<img src="../images/testimonials/testimonials-2.png" alt="testimonials-2" class="testimonials__item__img">
+				<div class="testimonials__item__title">Jhon Smith</div>
+				<div class="testimonials__item__descr">“ Food Delivery is a thriving business and there are many opportunities for this Businesses as its Growing. Food Delivery is a thriving business ”</div>
+			</div>
+			<div class="testimonials__item">
+				<img src="../images/testimonials/testimonials-3.png" alt="testimonials-3" class="testimonials__item__img">
+				<div class="testimonials__item__title">Jhon Smith</div>
+				<div class="testimonials__item__descr">“ Food Delivery is a thriving business and there are many opportunities for this Businesses as its Growing. Food Delivery is a thriving business ”</div>
+			</div>
+		</div>
+	</div>
+</section>
+      <section class="food-available">
+	<div class="container">
+		<h2 class="main-title food-available__title">Food Always Available</h2>
+		<button class="food-available__btn main-btn">Download Now</button>
+	</div>
+</section>
+      <section class="update-news">
+	<div class="container">
+		<h2 class="main-title update-news__title">Update News</h2>
 
+		<div class="update-news__list">
+
+			<div class="update-news__item">
+				<img src="../images/update-news/update-news-4.png" alt="update-news-1" class="update-news__item__img">
+				<div class="update-news__item__title">Healthy Food</div>
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+					this Businesses as its Growing.</div>
+				<a href="#" class="update-news__item__link">Read More</a>
+			</div>
+			<div class="update-news__item">
+				<img src="../images/update-news/update-news-2.png" alt="update-news-2" class="update-news__item__img">
+				<div class="update-news__item__title">Healthy Food</div>
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+					this Businesses as its Growing.</div>
+				<a href="#" class="update-news__item__link">Read More</a>
+			</div>
+			<div class="update-news__item">
+				<img src="../images/update-news/update-news-3.png" alt="update-news-3" class="update-news__item__img">
+				<div class="update-news__item__title">Healthy Food</div>
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+					this Businesses as its Growing.</div>
+				<a href="#" class="update-news__item__link">Read More</a>
+			</div>
+
+		</div>
+
+	</div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="footer__container">
-    
+  <div class="container">
+    <div class="footer__wrapper__logo">
+      <a href="#" class="logo footer__logo">
+        Hungry
+      </a>
+      <div class="footer__descr">
+        Food Delivery is a thriving business and there are many opportunities for this Businesses as its Growing.
+      </div>
+    </div>
+    <div class="footer__wrapper__menu">
+      <div>
+        <div class="menu__title">Support</div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Privacy & Policy</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Terms & Condition</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Guidelines</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="menu__title">Usefull Links</div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Privacy & Policy</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Terms & Condition</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Guidelines</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="menu__title">News Letter</div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Privacy & Policy</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Terms & Condition</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Guidelines</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
   </div>
 </footer>
   </div>

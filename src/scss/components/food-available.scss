@@ -1,0 +1,18 @@
+.food-available {
+	background: #1f98f0;
+	padding: 100px 20px 100px;
+	color: #fff;
+
+	.container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__title {
+		color: #fff;
+	}
+	&__btn {
+		color: #1f98f0;
+	}
+}

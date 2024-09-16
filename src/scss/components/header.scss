@@ -1,82 +1,58 @@
-
-@import "../config/mixins";
+@import '../config/mixins';
 
 .header {
-	z-index: 50;
-	inline-size: 100%;
-	transition: background-color var(--bs-transition);
+	background: #1f98f0;
+	margin-bottom: -1px;
+	color: #ffff;
+	padding: 30px 20px 20px;
 
-	.header-is-sticky & {
-		// ..стили для липкого хедера
-		position: fixed;
-		background-color: #007aff;
+	.container {
+		display: flex;
+		justify-content: space-between;
 	}
 
-	// .header__container
-	&__container {
-		display: flex;
-		block-size: rem($header-height);
-		align-items: center;
+	&__logo {
+		margin-right: 50px;
+	}
 
-		.header-is-sticky & {
-			block-size: rem($header-height - 50);
+	&__menu {
+		margin: 0 20px;
+	}
+
+	.menu {
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__list {
+			width: 320px;
+
+			display: flex;
+			justify-content: space-between;
+		}
+		&__item {
+		}
+		&__link {
+			color: #ffffffb3;
+			font-size: 16px;
+			font-family: 'Work Sans';
+			font-weight: 500;
+
+			&_active {
+				color: #fff;
+				&:after {
+					content: '';
+					border: 2px solid #ffffffc9;
+					display: block;
+					width: 100%;
+					margin-top: 3px;
+				}
+			}
 		}
 	}
+
+	&__btn {
+		color: var(--black-color);
+	}
 }
-
-// Burger
-
-/*
-.icon-menu {
-  display: none;
-
-  @include media-mx(768) {
-    display: block;
-    position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 5;
-
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
-    }
-
-    &::before {
-      top: 0;
-    }
-
-    &::after {
-      bottom: 0;
-    }
-
-    span {
-      top: calc(50% - rem(1));
-    }
-
-    .menu-open & {
-      span {
-        width: 0;
-      }
-
-      &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
-      }
-
-      &::after {
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
-      }
-    }
-  }
-}
-*/
