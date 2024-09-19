@@ -29,7 +29,11 @@
 @import 'config/base';
 
 /**
+* Библиотеки
+*/
+@import 'libs/swiper';
 
+/**
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
@@ -39,5 +43,8 @@
 @import 'components/testimonials';
 @import 'components/food-available';
 @import 'components/update-news';
+@import 'components/tabs';
+@import 'components/accordion';
 @import 'components/footer';
+@import 'components/swiper';
 @import 'components/media';

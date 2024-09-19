@@ -1,35 +1,36 @@
-@import "../config/mixins";
-
 .tabs {
+	width: 100%;
+	padding: 60px 20px;
+}
+
+.tabs__controls {
 	display: flex;
-	gap: rem(10);
-	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
 
-	// .tabs__nav
-	&__nav {
-		display: flex;
-		gap: rem(10);
-		align-items: center;
-	}
+.tabs__button {
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
 
-	// .tabs__trigger
-	&__trigger {
-		padding: rem(10);
-		transition: 0.2s ease-in-out;
+.tabs__button_active {
+	background-color: #007bff;
+	color: #fff;
+	border-color: #007bff;
+}
 
-		&.active {
-			color: #fff;
-			background-color: #ff4040;
-		}
-	}
+.tabs__content {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
 
-	// .tabs__panel
-	&__panel {
-		display: none;
-		animation: fade-up-big 0.4s forwards;
+.tabs__pane {
+	display: none;
+}
 
-		&.active {
-			display: block;
-		}
-	}
+.tabs__pane_active {
+	display: block;
 }

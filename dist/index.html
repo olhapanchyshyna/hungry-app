@@ -13,39 +13,65 @@
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/main.min.css">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@@400;500&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
   <script defer="defer" src="js/main.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header" data-lp>
-	<div class="container">
+    <header class="header">
+
+	<div class="container header__desktop">
 		<div class="menu__wrapper">
 			<a href="#" class="logo header__logo">
 				Hungry
 			</a>
 			<nav class="header__menu">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
+					<li class="menu__item"><a href="#home" class="menu__link menu__link_active">Home</a></li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Features</a>
+						<a href="#features" class="menu__link">Features</a>
 					</li>
-					<li class="menu__item"><a href="#" class="menu__link">Testimonial</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+					<li class="menu__item"><a href="#testimonial" class="menu__link">Testimonial</a></li>
+					<li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
 				</ul>
 			</nav>
 		</div>
-		<!-- <button class='main-btn header__btn'>Download Now</button> -->
+		<button class="main-btn header__btn">Download Now</button>
+	</div>
+
+	<div class="container header__mobile">
+		<a href="#" class="logo header__logo">
+			Hungry
+		</a>
+
+		<img src="../images/header/hamburger.png" alt="hamburger" class="hamburger__icon_open">
+
+		<div class="hamburger">
+			<img src="../images/header/close.png" alt="close" class="hamburger__icon_close">
+			<nav class="hamburger__menu">
+				<ul class="hamburger__list">
+					<li class="hamburger__item"><a href="#home" class="hamburger__link">Home</a></li>
+					<li class="hamburger__item">
+						<a href="#features" class="hamburger__link">Features</a>
+					</li>
+					<li class="hamburger__item"><a href="#testimonial" class="hamburger__link">Testimonial</a></li>
+					<li class="hamburger__item"><a href="../update-news.html" class="hamburger__link">Blog</a></li>
+				</ul>
+			</nav>
+
+			<button class="main-btn hamburger__btn">Download Now</button>
+		</div>
 
 	</div>
 </header>
 
     <main class="page">
-      <section class="first-screen">
+      <section class="first-screen" id="home">
 	<div class="container">
 		<div class="first-screen__wrapper__content">
 			<h1 class="first-screen__title">Your Favourite Food delivery Partner.</h1>
@@ -75,6 +101,8 @@
 			<img src="../images/first-screen/ellipse-right.png" alt="" class="first-screen__ellipse_right">
 		</div>
 	</div>
+
+
 </section>
       <section class="company-use">
 	<div class="container">
@@ -88,8 +116,10 @@
 	</div>
 
 </section>
-      <section class="main-features">
+      <section class="main-features" id="features">
 	<div class="container">
+
+		<h2 class="main-title main-features__title main-features__title_mobile">Main Features</h2>
 
 		<div class="main-features__wrapper__img">
 			<img src="../images/main-features/circle-left.png" alt="circle-left" class="main-features__circle_left">
@@ -98,7 +128,7 @@
 		</div>
 
 		<div class="main-features__wrapper__content">
-			<h2 class="main-title main-features__title">Main Features</h2>
+			<h2 class="main-title main-features__title main-features__title_deks">Main Features</h2>
 			<div>
 				<div class="main-features__items">
 					<img src="../images/main-features/quick-delivery.png" alt="quick-delivery">
@@ -132,7 +162,7 @@
 
 	</div>
 </section>
-      <section class="testimonials">
+      <section class="testimonials" id="testimonial">
 	<div class="container">
 		<h2 class="main-title testimonials__title">Testimonials</h2>
 		<div class="testimonials__list">
@@ -157,10 +187,10 @@
       <section class="food-available">
 	<div class="container">
 		<h2 class="main-title food-available__title">Food Always Available</h2>
-		<button class="food-available__btn main-btn">Download Now</button>
+		<button class="main-btn food-available__btn">Download Now</button>
 	</div>
 </section>
-      <section class="update-news">
+      <section class="update-news" id="blog">
 	<div class="container">
 		<h2 class="main-title update-news__title">Update News</h2>
 
@@ -169,21 +199,24 @@
 			<div class="update-news__item">
 				<img src="../images/update-news/update-news-4.png" alt="update-news-1" class="update-news__item__img">
 				<div class="update-news__item__title">Healthy Food</div>
-				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities
+					for
 					this Businesses as its Growing.</div>
 				<a href="#" class="update-news__item__link">Read More</a>
 			</div>
 			<div class="update-news__item">
 				<img src="../images/update-news/update-news-2.png" alt="update-news-2" class="update-news__item__img">
 				<div class="update-news__item__title">Healthy Food</div>
-				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities
+					for
 					this Businesses as its Growing.</div>
 				<a href="#" class="update-news__item__link">Read More</a>
 			</div>
 			<div class="update-news__item">
 				<img src="../images/update-news/update-news-3.png" alt="update-news-3" class="update-news__item__img">
 				<div class="update-news__item__title">Healthy Food</div>
-				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities for
+				<div class="update-news__item__descr">Food Delivery is a thriving business and there are many opportunities
+					for
 					this Businesses as its Growing.</div>
 				<a href="#" class="update-news__item__link">Read More</a>
 			</div>
@@ -192,6 +225,70 @@
 
 	</div>
 </section>
+      <div class="container tabs">
+  <!-- Кнопки для переключения табов -->
+  <div class="tabs__controls">
+    <button class="tabs__button tabs__button_active" data-tab="1">Tab 1</button>
+    <button class="tabs__button" data-tab="2">Tab 2</button>
+    <button class="tabs__button" data-tab="3">Tab 3</button>
+  </div>
+
+  <!-- Контент табов -->
+  <div class="tabs__content">
+    <div class="tabs__pane tabs__pane_active" id="tab-1">
+      <p>Content for Tab 1</p>
+    </div>
+    <div class="tabs__pane" id="tab-2">
+      <p>Content for Tab 2</p>
+    </div>
+    <div class="tabs__pane" id="tab-3">
+      <p>Content for Tab 3</p>
+    </div>
+  </div>
+</div>
+
+      <div class="container accordion">
+  <div class="accordion__item">
+    <button class="accordion__header" data-target="content-1">Section 1</button>
+    <div class="accordion__content" id="content-1">
+      <p>This is the content for section 1.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <button class="accordion__header" data-target="content-2">Section 2</button>
+    <div class="accordion__content" id="content-2">
+      <p>This is the content for section 2.</p>
+    </div>
+  </div>
+
+  <div class="accordion__item">
+    <button class="accordion__header" data-target="content-3">Section 3</button>
+    <div class="accordion__content" id="content-3">
+      <p>This is the content for section 3.</p>
+    </div>
+  </div>
+</div>
+
+      <div class="container swiper" navigation="true" pagination="true">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+		<!-- Slides -->
+		<div class="swiper-slide">Slide 1</div>
+		<div class="swiper-slide">Slide 2</div>
+		<div class="swiper-slide">Slide 3</div>
+
+	</div>
+
+	<div class="swiper-pagination"></div>
+	<div class="swiper__wrapper__btn">
+		<div class="swiper-button-prev">Prev</div>
+		<div class="swiper-button-next">Next</div>
+	</div>
+
+</div>
+
+
     </main>
 
     <footer class="footer">

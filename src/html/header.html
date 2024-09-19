@@ -1,21 +1,46 @@
-<header class="header" data-lp>
-	<div class="container">
+<header class="header">
+
+	<div class="container header__desktop">
 		<div class='menu__wrapper'>
 			<a href="#" class="header__logo logo">
 				Hungry
 			</a>
 			<nav class="header__menu">
 				<ul class="menu__list">
-					<li class="menu__item"><a href="#" class="menu__link menu__link_active">Home</a></li>
+					<li class="menu__item"><a href="#home" class="menu__link menu__link_active">Home</a></li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Features</a>
+						<a href="#features" class="menu__link">Features</a>
 					</li>
-					<li class="menu__item"><a href="#" class="menu__link">Testimonial</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+					<li class="menu__item"><a href="#testimonial" class="menu__link">Testimonial</a></li>
+					<li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
 				</ul>
 			</nav>
 		</div>
-		<!-- <button class='main-btn header__btn'>Download Now</button> -->
+		<button class='main-btn header__btn'>Download Now</button>
+	</div>
+
+	<div class='container header__mobile '>
+		<a href="#" class="header__logo logo">
+			Hungry
+		</a>
+
+		<img src='../images/header/hamburger.png' alt='hamburger' class='hamburger__icon_open'>
+
+		<div class='hamburger'>
+			<img src='../images/header/close.png' alt='close' class='hamburger__icon_close'>
+			<nav class="hamburger__menu">
+				<ul class="hamburger__list">
+					<li class="hamburger__item"><a href="#home" class="hamburger__link ">Home</a></li>
+					<li class="hamburger__item">
+						<a href="#features" class="hamburger__link">Features</a>
+					</li>
+					<li class="hamburger__item"><a href="#testimonial" class="hamburger__link">Testimonial</a></li>
+					<li class="hamburger__item"><a href="../update-news.html" class="hamburger__link">Blog</a></li>
+				</ul>
+			</nav>
+
+			<button class='main-btn hamburger__btn'>Download Now</button>
+		</div>
 
 	</div>
 </header>
